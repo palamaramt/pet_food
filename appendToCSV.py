@@ -2,7 +2,7 @@ import csv
 import sys
 
 
-def appendToCSV(pricesDict,species,today,filename):
+def appendToCSV(fields,pricesDict,species,today,filename):
     # Determine which csv to print to
     #if species == "dog":
     #    # name of csv

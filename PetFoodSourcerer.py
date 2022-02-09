@@ -17,6 +17,7 @@ from checkCSV import checkCSV
 today = date.today().strftime("%m/%d/%y")
 # make empty dictionary for completed date
 pricesList= []
+fields = ["Name","Price","Date"]
 # looking for cat or dog food?
 species = "dog"
 
@@ -57,4 +58,4 @@ for name,data in websites.items():
     pricesList.append(myDict)
 
 # call appendToCSV.py to append data to end of csv
-appendToCSV(pricesList,species,today,filename)
+appendToCSV(fields,pricesList,species,today,filename)

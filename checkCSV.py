@@ -14,7 +14,7 @@ def checkCSV(filename,today):
             # if today's date is found in the csv, create following options:
             if lines[-1] == today:
                 # loop to force user to choose to continue or not
-                while cont.lower() is not "n" or "y":
+                while cont.lower() != "n" or "y":
                     print("You've already searched for prices today!")
                     cont = input("Would you like to continue? (Y/N): ")
                     # if user chooses to not continue, end program
@@ -27,5 +27,3 @@ def checkCSV(filename,today):
                     # if user makes invalid choice, tell them about it
                     else:
                         print("Please enter a valid answer.")
-            else:
-                return
