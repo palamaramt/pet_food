@@ -13,4 +13,4 @@ selenium: `pip install selenium`\
 geckodriver: https://github.com/mozilla/geckodriver/releases 
 
 ## Changes You May Need to Make:
-you will need to add geckodriver to your path in the script under the variable `gecko_path`, so make sure to update the path from the one on my computer to lead to where you have geckodriver on your computer.
+you will need to add geckodriver to your path in the script `PetFoodSourcerer.py` under the variable `gecko_path`, so make sure to update the path from the one on my computer to lead to where you have geckodriver on your computer.
